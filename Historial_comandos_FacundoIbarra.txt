@@ -1,0 +1,215 @@
+ls -l
+cd repogit/
+ls-l
+ls
+cd UTN-FRA_SO_onBording/
+ls
+cd comandos_basicos/
+ls
+cd
+cat /proc/cpuinfo
+echo "hola mundo" |wc
+echo "hola mundo" -n
+echo -n "hola mundo" 
+echo "hola mundo" 
+ls -l
+cd repogit/
+ls -l
+alias
+alias saludo0"echo $(whoami)"
+alias saludo"echo $(whoami)"
+alias saludo="echo $(whoami)"
+saludo
+whoami
+echo hola
+alias saludo="echo hola $(whoami)"
+saludo
+alias
+ll
+ls -la ../
+ls -la $HOME
+ls -la /home/vagrant
+ls -la /home/vagrant/.ssh/
+ssh-keygen -t ed25519
+ls -la /home/vagrant/.ssh/
+cat /home/vagrant/.ssh/id_ed25519.pub 
+ll
+git clone git@github.com:FacuIbrra1/TP_AySO.git
+ll
+cd TP_AySO/
+git status
+touch un_archivo
+ll
+git status 
+git add .
+git status 
+git commit -m "add: primer commit"
+git status 
+git push
+cd
+man man
+pwd
+ls --la |grep confi
+ls -la |grep confi
+ls -l config/
+ls -l .config/
+cat /proc/cpuinfo 
+grep "model name" /proc/cpuinfo 
+grep "model name" /proc/cpuinfo | tail -n1 
+cat /proc/cpuinfo | grep "model name"
+cat /proc/cpuinfo | grep "model name" | tail -n1
+cat /proc/cpuinfo | grep "model name" | tail -n1 | wc
+ls -l /bin/ /sbin /usr/bin/ |wc -l
+ls -l /bin/ /sbin /usr/bin |wc -l
+ls -l
+cd repogit/
+ls 
+cd TP_AySO/
+echo hola
+echo hola > un_archivo 
+cat un_archivo 
+ls -l
+ls -l > un_archivo 
+cat un_archivo 
+echo hola >> un_archivo 
+cat un_archivo 
+bc<<<5+2 
+wc -l << EOF
+1
+2
+linea3
+EOF
+
+cat << FIN > otro_archivo
+linea1
+linea2
+FIN
+
+ll
+ca otro_archivo 
+cat otro_archivo 
+history
+cd
+ls -la
+cat .bash_history 
+history -a
+cat .bash_history 
+ls -la
+cat /proc/cpuinfo/ |grep -i proce | tail -n1
+cat /proc/cpuinfo |grep -i proce | tail -n1
+ps -ef|head -n4
+ps -ef |head -n4
+ls -l /var/log/
+ls -l /var/log/dmesg
+sudo tail /var/log/dmesg
+sudo tail /var/log/dmesg |grep enp0s3
+cat /proc/meminfo
+free -h
+lsusb
+lspci
+ls
+lsusb
+lscpu
+history -a
+cat .bash_history 
+mkdir ejemplo1
+ls -l
+mkdir -p ejemplo2/hijo
+echo $?
+ls -l
+ls -l ejemplo2/
+mkdir -p ejemplo3/{mama,papa}
+tree ejemplo3/
+mkdir -p ejemplo4/{mama,papa}/hijo
+mkdir -p ejemplo5/{mama,papa}/hijos_{1..5}
+ls -l
+apt install tree
+sudo app update ; sudo apt install tree
+ls -l
+cd ejemplo3/
+ls
+tree
+cd
+sudo app update
+pwd
+ls
+cd repogit/
+ls -l 
+cd TP_AySO/
+ls -l
+cd
+history 
+ls
+cd repogit/
+ls -ls
+cd TP_AySO/
+cat /etc/os-release
+grep HOME_URL /etc/os-release 
+grep home_url /etc/os-release
+man grep
+grep -F home_url /etc/os-release
+grep -i home_url /etc/os-release
+whoami
+ls -l
+echo “Usuario=$(whoami)” > datos_usuario.txt 
+ls -l
+cat datos_usuario.txt 
+cd
+history -a
+history 
+sudo app udate
+apt install tree
+sudo su app udate
+choco install tree
+sudo apt install tree
+tree 
+sudo apt install tree
+ls -l
+cd repogit/
+ls
+cd TP_AySO/
+ls
+cat otro_archivo 
+cd ..
+cd ejemplo5
+cd ..
+cd ejemplo
+cd ejemplo5
+ls
+tree
+cd
+git status
+ls
+cd repogit/
+git status
+ls
+cd TP_AySO/
+git status
+git add datos_usuario.txt 
+git commit -m "ADD: agregado 1er ejercicio
+sobre datos_usuarios.txt"
+git config --global user.email "facundo.ibarraq@hotmail.com"
+git config --global user.name "FacuIbrra1"
+git status
+git add .
+git status
+git commit -m "add:ejemplos en clase"
+grep "model name" /proc/cpuinfo | head -n 1 >> datos_usuario.txt
+git add datos_usuario.txt
+git commit -m "feat: Añadiendo información de CPU"
+git status
+grep -v "nologin" /etc/passwd | head -n 10 | sort -t ':' -k 7 > lista_ordenada
+git add lista_ordenada
+git commit -m "ADD: Listado de usuarios ordenada"
+echo "Comando para capturar tráfico de red: tcpdump" > comando_dump_net
+git add comando_dump_net
+git commit -m "ADD: Comando para Capturar y analizar el tráfico de red"
+cat <<EOF > README.md
+Alumno: Facundo Ibarra Quiroz
+División: 313 
+Turno: Noche
+EOF
+
+git add README.md
+git commit -m "docs: Añadiendo información personal al README"
+history -a
